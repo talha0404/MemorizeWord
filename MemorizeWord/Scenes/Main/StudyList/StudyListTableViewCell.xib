@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="StudyListTableViewCell" customModule="MemorizeWord" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="130"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My List" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EWW-RF-0hL">
+                    <rect key="frame" x="16" y="16" width="63" height="24"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="22 Term" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vGP-kr-JAk">
+                    <rect key="frame" x="36" y="48" width="59.666666666666657" height="19.333333333333329"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" red="0.98186914982586204" green="0.96823094939482757" blue="0.98948884647413804" alpha="0.87981660487288138" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1 Learned" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VaF-8X-b3o">
+                    <rect key="frame" x="35.999999999999993" y="69.333333333333329" width="70.333333333333314" height="19.333333333333329"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" red="0.98039215686274506" green="0.96862745098039216" blue="0.9882352941176471" alpha="0.8837890625" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="60 Not Learned" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3S3-6r-3cL">
+                    <rect key="frame" x="35.999999999999993" y="90.666666666666671" width="113.33333333333331" height="20.333333333333329"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" red="0.98186914979999995" green="0.96823094939999998" blue="0.98948884650000002" alpha="0.88774496822033899" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <constraints>
+                <constraint firstItem="vGP-kr-JAk" firstAttribute="top" secondItem="EWW-RF-0hL" secondAttribute="bottom" constant="8" id="8to-xy-pqR"/>
+                <constraint firstItem="EWW-RF-0hL" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="16" id="FdB-J3-pjC"/>
+                <constraint firstItem="EWW-RF-0hL" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="ItQ-ny-aNa"/>
+                <constraint firstItem="VaF-8X-b3o" firstAttribute="top" secondItem="vGP-kr-JAk" secondAttribute="bottom" constant="2" id="Zsg-eZ-zyN"/>
+                <constraint firstItem="3S3-6r-3cL" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="36" id="em8-9Z-3UO"/>
+                <constraint firstItem="vGP-kr-JAk" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="36" id="p6f-eo-aWR"/>
+                <constraint firstItem="3S3-6r-3cL" firstAttribute="top" secondItem="VaF-8X-b3o" secondAttribute="bottom" constant="2" id="sBQ-r3-Uz2"/>
+                <constraint firstItem="VaF-8X-b3o" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="36" id="tHf-Uy-gX3"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="learned" destination="VaF-8X-b3o" id="bCQ-dJ-uox"/>
+                <outlet property="notLearned" destination="3S3-6r-3cL" id="dY4-Un-tK1"/>
+                <outlet property="terms" destination="vGP-kr-JAk" id="JTN-wd-6HA"/>
+                <outlet property="title" destination="EWW-RF-0hL" id="d0M-BM-u4U"/>
+            </connections>
+            <point key="canvasLocation" x="139.69465648854961" y="19.718309859154932"/>
+        </view>
+    </objects>
+</document>
